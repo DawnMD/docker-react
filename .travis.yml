@@ -1,7 +1,0 @@
-sudo: required
-services:
-  - docker
-before_install:
-  - docker build -Dockerfile.dev -t dawnmd/react .
-script:
-  - docker run dawnmd/react npm run test -- --coverage
